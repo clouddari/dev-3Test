@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+input {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 8px 30px;
+  font-size: 12px;
+  background: #add1f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  color: rgb(245, 147, 147);
+  background-color: #ffd8d8;
+}
+
+button:hover {
+  background: #0056b3;
+  color: white;
+}
+
+button:hover:disabled {
+  color: rgb(245, 147, 147);
+  background-color: #ffd8d8;
+}
+
+.form {
+  margin: 20px;
+}
+.line {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 0.6rem;
+}
+
+span {
+  padding: 10px;
+}
+.letter {
+  margin: 0 5px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #efd386;
+}
+
+.highlighted {
+  background-color: rgb(126, 184, 247);
+}
+
+.selection-box {
+  position: absolute;
+  background-color: rgba(173, 216, 230, 0.5);
+  border: 1px dashed #00f;
+  pointer-events: none;
+  will-change: width, height, top, left;
+}
+
+.dragging {
+  opacity: 0.6;
+  background-color: rgba(200, 200, 200, 0.3);
+  cursor: grab;
+  z-index: 1000;
+}
